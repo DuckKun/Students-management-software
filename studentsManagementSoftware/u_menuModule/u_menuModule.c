@@ -50,7 +50,7 @@ void menu_mainMenu(list_T *mainBuffer, list_T *sreachBuffer)
 		case 3:
 			// todo: loadData
 			unsigned int u4_totalStudent;	
-			u4_totalStudent = lineCount(filePath_name) -1;
+			u4_totalStudent = lineCount(filePath_name);
 			studentInputBuffer_T studentReadBuffer;
 			student_T studentemp;
 

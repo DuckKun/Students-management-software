@@ -160,13 +160,13 @@ void file_read_aStudent(studentInputBuffer_T* studentReadBuffer, unsigned int u4
 	/*-----------------------Name---------------------------*/
 
 	file_read_aProp(filePath_name, studentReadBuffer->fullName, u4_index);
-//	printf("%s\n", studentReadBuffer->fullName);
+	printf("%s\n", studentReadBuffer->fullName);
 	/*--------------------Year-of-birth----------------------*/
 
 	memset(temp, '\0', ARR_MAX);
 	file_read_aProp(filePath_yob, temp, u4_index);
 	studentReadBuffer->birthYear = atoi(temp);
-//	printf("%d\n", studentReadBuffer->birthYear);
+	printf("%d\n", studentReadBuffer->birthYear);
 	/*-----------------------Home-town------------------------*/
 
 	file_read_aProp(filePath_pob, studentReadBuffer->homeTown, u4_index);

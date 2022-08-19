@@ -76,7 +76,7 @@ void init()
 
 int main()
 {
-   //init();
+   init();
    watchData = list_size(&mainBuffer);
    menu_mainMenu(&mainBuffer, &sreachBuffer);
    return 0;
